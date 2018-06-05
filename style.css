@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    
+main {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 1em; 
+    margin: 2% 0;
+}
+}
+
+.jumbotron {
+    padding-left: 5%;
+    background-image: url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 0;
+}
+
+#modal{
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.8s ease-out;
+}
+#form{
+    background-color: white;
+    position: relative;
+    width: 80vw;
+    top: 20vh;
+    left: 10vw;
+    padding: 5em;
+}
+
+.options{
+    display: flex;
+}
+
+
+
+.form-options{
+    margin: 1% 0;
+}
+
+.form-group{
+    margin: 1% 0;
+}
+
+.edit, .delete {
+    padding: 0.2em;
+}
